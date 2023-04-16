@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.box1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.back,.front{
+    /* width: 50px; */
+    position: absolute;
+    z-index: -20;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.back{
+    transform: translateZ(-40px) scale(5);
+}
+
+.front{
+    transform: translateZ(-20px) scale(3);
+} 
+.heading{
+    position: relative;
+    font-size: 90px;
+    color: rgb(56, 170, 170);
+    text-shadow: -1px -1px 1px whitesmoke,1px 1px 1px aliceblue;
+    /* transform: translateZ(-10px); */
+    z-index: -1;
+}
+section{
+    background-color: rgb(8, 6, 21);
+    color: pink;
+    padding: 5rem 0;
+}
+
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+.bg2{
+    background-image: url(sport-2.jpg);
+}
+.bg3{
+    background-image: url(sport-3.jpg);
+}
+.h{
+    font-size: 40px;
+    color: mediumaquamarine;
+    padding: 0px 20px;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+    /* color: wheat; */
+    /* position: absolute; */
+    /* left: 0px; */
+    
+}
+.text:hover{
+    /* background-color: aqua; */
+    text-shadow: 2px 2px 2px rgb(222, 26, 82);
+    background-image: radial-gradient(circle,orange,white,green);
+}
+.bg{
+    height: 300px;
+    /* background-attachment: fixed; */
+    background-attachment: fixed;
+    display: flex;
+    background-color: yellow;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 50px; 
+}
+.disc{
+    color: rgb(135, 11, 11);
+    /* justify-content: center; */
+    /* padding-left: 400px; */
+    /* padding-top: 150px; */
+    font-size: 40px;
+    height: 40px;
+    width: fit-content;
+    /* align-self: flex-end; */
+    /* position: absolute; */
+    justify-content: flex-end;
+    background-color: beige;
+    /* align-items: center; */
+    /* top: 120px; */
+    /* left: 250px; */
+    /* background-color: magenta; */
+    /* background-color: magenta; */
+}
